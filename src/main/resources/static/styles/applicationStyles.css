@@ -1,0 +1,47 @@
+.mainWrapper{
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+
+.mainBody{
+    width: 80vw;
+    margin: auto;
+    background-color: floralwhite;
+}
+
+.mainBody h2, h3, p, ul{
+    text-align: center;
+    list-style: none;
+}
+
+.mainBody button {
+    margin-bottom: 30px;
+}
+
+.centerContent {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+}
+
+.oilChangeHeader{
+    display: flex;
+    flex-flow: wrap row;
+    height: 8vh;
+    justify-content: space-evenly;
+}
+
+.oilChangeFooter{
+    height: 5vh;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+#oilChangeImage{
+    margin-top: 50px;
+}

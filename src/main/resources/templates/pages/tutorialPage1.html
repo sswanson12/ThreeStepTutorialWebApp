@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://tyhmeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Oil Change Supplies</title>
+    <link rel="stylesheet" th:href="@{/styles/applicationStyles.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="mainWrapper">
+    <header th:replace="fragments/Header :: oilChangeHeader"></header>
+
+    <div class="mainBody">
+        <h3>Gathering the Necessary Supplies</h3>
+        <hr>
+        <p><b>There are 5 things you will want for your oil change</b></p>
+        <ul>
+            <li>1. A new oil filter that fits your vehicle's engine <img width="50px" height="50px" th:src="@{https://media.istockphoto.com/id/1046525608/photo/oil-filter-isolated-on-white-background-automobile-spare-part.jpg?s=612x612&w=0&k=20&c=BBWLnJx2F0FXTTBIy_7s4YoNXWAGInNsNk9-SEBIL4Q=}"/></li>
+            <li>2. Enough of your vehicles specific oil type to fill your engine to its manufacturer stated oil capacity <img width="50px" height="50px" th:src="@{https://thumbs.dreamstime.com/b/motor-oil-car-engine-close-up-98139447.jpg}"/></li>
+            <li>3. A drain pan to catch the oil draining from your vehicles engine <img width="50px" height="50px" th:src="@{https://st3.depositphotos.com/12612606/15404/i/600/depositphotos_154041030-stock-photo-car-mechanic-loosen-oil-filter.jpg}"/></li>
+            <li>4. A funnel to make it easier pouring the oil into your vehicles engine <img width="50px" height="50px" th:src="@{https://media.istockphoto.com/id/168268712/photo/funnel-made-of-aluminium.jpg?b=1&s=612x612&w=0&k=20&c=9y-H7CbTZDs2p4V7CMYUQ7iqPX_KH1zVYiMwPtywv0U=}"/></li>
+            <li>5. A ratchet to remove, and re-tighten your engine's drain plug <img width="50px" height="50px" th:src="@{https://www.shutterstock.com/shutterstock/photos/1778215235/display_1500/stock-photo-use-screw-for-car-engine-maintenance-service-use-mm-wrench-to-change-engine-oil-1778215235.jpg}"/></li>
+            <li>6. A jack to get your car high enough off the ground to reach the drain plug <img width="50px" height="50px" th:src="@{https://media.istockphoto.com/id/1129827496/photo/floor-jack-isolated.jpg?s=612x612&w=0&k=20&c=pLqQVHfZvN1bImcFSCOkuoqydgJOjTktsnn6HbNIsmU=}"/></li>
+        </ul>
+        <div class="centerContent">
+            <a th:href="@{/steps}"><button>Next Step</button></a>
+        </div>
+    </div>
+
+    <footer th:replace="fragments/Footer :: oilChangeFooter"></footer>
+</div>
+</body>
+</html>

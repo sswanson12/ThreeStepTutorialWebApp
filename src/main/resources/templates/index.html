@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://tyhmeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Your Oil!</title>
+    <link rel="stylesheet" th:href="@{/styles/applicationStyles.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="mainWrapper">
+    <header th:replace="fragments/Header :: oilChangeHeader"></header>
+
+    <div class="mainBody">
+        <div id="oilChangeImage" class="centerContent">
+            <!--Free Image from Dreamstime.com-->
+            <img th:src="@{https://thumbs.dreamstime.com/b/oil-change-engine-car-workshop-professio-professional-mechanic-sales-service-112136204.jpg}"/>
+        </div>
+        <hr>
+        <h3>Are you ready to change your oil?</h3>
+        <p>Follow this tutorial and learn how to do it!</p>
+        <hr>
+        <p><b>Steps to changing your oil:</b></p>
+        <p><a th:href="@{/supplies}">Step 1 - Gathering the Supplies</a></p>
+        <p><a th:href="@{/steps}">Step 2 - Performing the Change</a></p>
+        <p><a th:href="@{/clean-up}">Step 3 - Clean Up</a></p>
+    </div>
+
+    <footer th:replace="fragments/Footer :: oilChangeFooter"></footer>
+</div>
+</body>
+</html>

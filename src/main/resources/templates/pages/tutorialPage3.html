@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://tyhmeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Clean Up</title>
+    <link rel="stylesheet" th:href="@{/styles/applicationStyles.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="mainWrapper">
+    <header th:replace="fragments/Header :: oilChangeHeader"></header>
+
+    <div class="mainBody">
+        <h2>Clean Up</h2>
+        <div class="centerContent">
+            <img th:src="@{https://thumbs.dreamstime.com/b/oil-spill-splash-14572609.jpg}"/>
+        </div>
+        <h3>Oops! You probably spilled at least a couple of drops of oil on the ground.</h3>
+        <hr>
+        <p><b>To clean this up: </b>Toss cat litter or a similar substance on top. It can absorb the oil, and then you can throw it away without it polluting the surrounding area!</p>
+    </div>
+
+    <footer th:replace="fragments/Footer :: oilChangeFooter"></footer>
+</div>
+</body>
+</html>

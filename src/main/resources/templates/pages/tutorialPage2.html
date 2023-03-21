@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://tyhmeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Performing the Change</title>
+    <link rel="stylesheet" th:href="@{/styles/applicationStyles.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<div class="mainWrapper">
+    <header th:replace="fragments/Header :: oilChangeHeader"></header>
+
+    <div class="mainBody">
+        <div class="centerContent">
+            <img th:src="@{https://media.istockphoto.com/id/652660470/photo/auto-mechanic-service-and-repair.jpg?s=612x612&w=0&k=20&c=bEQwVRbOLw1i5w5q8Iz6llAKFEokFDZq5mLFq_khZ-o=}"/>
+        </div>
+        <h3>Performing the Oil Change</h3>
+        <hr>
+        <p><b>This process can be extremely easy & quick, or time-consuming based on the age & condition of your vehicle</b></p>
+        <hr>
+        <ul>
+            <li><b>- Step 1 -</b></li>
+            <li>Lift your vehicle using the jack</li>
+            <li><b>- Step 2 -</b></li>
+            <li>Set oil pan underneath the drain plug</li>
+            <li><b>- Step 3 -</b></li>
+            <li>Remove drain plug using ratchet, and drain oil. (this may take some time, wait until the engine drips every 10 seconds or so)</li>
+            <li><b>- Step 4 -</b></li>
+            <li>Re-fasten drain plug in original spot using ratchet</li>
+            <li><b>- Step 5 -</b></li>
+            <li>Move oil pan underneath oil filter</li>
+            <li><b>- Step 6 -</b></li>
+            <li>Remove oil filter (should unscrew by hand)</li>
+            <li><b>- Step 8 -</b></li>
+            <li>Oil the gasket on your new filter for a proper seal, and hand-tighten the new filter into place</li>
+            <li><b>- Step 9 -</b></li>
+            <li>Fill your engine with oil. (The specified type and amount your vehicle requires)</li>
+            <li><b>- Step 10 -</b></li>
+            <li>Double check everything is fastened correctly, and start your engine to check for oil pressure!</li>
+            <li><b>- Step 11 -</b></li>
+            <li>If nothing bad happens, you did it right! Congrats!</li>
+        </ul>
+        <div class="centerContent">
+            <a th:href="@{/clean-up}"><button>Next Step</button></a>
+        </div>
+    </div>
+
+    <footer th:replace="fragments/Footer :: oilChangeFooter"></footer>
+</div>
+</body>
+</html>
